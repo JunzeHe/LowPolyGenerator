@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>Low Poly Generator - Week 1</title>
+    <link rel="stylesheet" href="LowPoly.css">
+</head>
+
+<body>
+    <div id='menu'>
+        <form action='#' onsubmit="return false;">
+            <input type='file' id='imgfile' />
+            <input type='button' id='btnLoad' value='Load' />
+            <input type='button' id='enableMesh' class='disabled_button' value='mesh (M)' />
+            <input type='button' id='enableColor' class='disabled_button' value='color (C)' />
+            <input type='button' id='enableDelete' class='disabled_button' value='delete (D)' />
+            <input type='button' id='createGenericMesh' value="Create Generic Mesh" />
+            <input type='button' id='createRandomMesh' value="Create Random Mesh" />
+            <input type='button' id='posterize' value='Posterize' />
+            <input type='button' id='fillWithAverage' value="Fill in Mesh" />
+
+            <input type='text' id='edgeColor' placeholder="Edge Color(Enter to submit)" />
+
+            <input type='text' id='vertexColor' placeholder="Vertex Color(Enter to submit)" />
+
+            <input type='range' id='vertexRadius' min="3" max="10" />
+
+            <input type='button' id='saveColors' value="Save Colors" />
+
+            <input type='button' id='resetPanZoom' value="Reset Pan/Zoom" />
+            <input type='button' id='toggleMenuVisible' value="Hide Menu (V)" />
+        </form>
+
+        <p> Z + drag -> zoom
+            <br>space + drag -> pan</p>
+    </div>
+    <div id="canvases">
+        <canvas id="mainImage">If you are seeing this, it means your browser is incompatible with the technology required for this app.</canvas>
+        <canvas id="meshLayer"></canvas>
+        <canvas id="colorLayer"></canvas>
+        <canvas id="dummyLayer" style="display:none">Layer created for having an unaffected layer of the transformations to check if points are within paths</canvas>
+    </div>
+
+
+</body>
+
+
+<script src="MeshPoints.js"></script>
+<script src="GlobalVariables.js"></script>
+<script src="UploadImage.js"></script>
+<script src="CreateMesh.js"></script>
+<script src="CreateGenericMesh.js"></script>
+<script src="Posterize.js"></script>
+<script src='MergeTriangles.js'></script>
+<script src="RandomPoints.js"></script>
+<script src="FillWithAverage.js"></script>
+<script src="ColorFillerPicker.js"></script>
+<script src="RemoveMesh.js"></script>
+<script src="ZoomAndPan.js"></script>
+<script src="GlobalFunctions.js"></script>
+
+
+
+</html>

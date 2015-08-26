@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+}
+
+#meshDisplay {
+    margin: 0;
+    padding: 0;
+}
+
+#menu {
+    margin: 0;
+    position: absolute;
+    z-index: 101;
+    width: 11%;
+
+    border-style: solid;
+    border-radius: 8px;
+}
+
+#menu input {
+    display: block;
+    white-space: normal;
+    width: 78%;
+    margin-left: 11%;
+    margin-right: 11%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 7px;
+}
+
+#menu input[type="button"]:active{
+    border-style: inset;
+    background-color: #8C8FBA;
+}
+
+#menu input[type="button"]{
+    border-radius:7px;
+    outline-style: none;
+    border-style: outset;
+    background-color: #BBBFF0;
+}
+
+#canvases {
+    background-color: aqua;
+    position: relative;
+    z-index: 100;
+}
+
+#canvases canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#meshLayer {
+    display: none;
+}
+
+#colorLayer {
+    display: none;
+}
+
+.disabled_button {
+    border-style: outset;
+    outline-style: none;
+    background-color: #C9C9C9;
+    border-bottom-style: solid;
+    border-bottom-width: 6px;
+    border-bottom-color: darkred;
+}
+
+.disabled_button:active {
+    background-color: #8C8C8C;
+    border-style: inset;
+}
+
+.enabled_button {
+    border-bottom-style: solid;
+    border-bottom-color: limegreen;
+    border-bottom-width: 6px;
+    background-color: #C9C9C9;
+    outline-style: none;
+}
+
+.enabled_button:active {
+    background-color: #8C8C8C;
+}
+
+.decoratedCanvas {
+    border-style: dotted;
+    border-color: teal;
+    border-width: 3%;
+}
